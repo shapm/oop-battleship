@@ -10,5 +10,12 @@ package battleship;
  * @author Sha
  */
 public class BattleshipDriver {
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Board main = new Board();
+    }
     
 }

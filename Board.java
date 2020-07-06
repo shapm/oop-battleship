@@ -22,9 +22,8 @@ public class Board {
     
     }
     
-    public Board(int size, boolean direction) {
+    public Board(int size) {
         this.size = size;
-        this.direction = direction;
     }
     
     // getters & setters
@@ -44,11 +43,6 @@ public class Board {
         this.direction = direction;
     }
     
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
+
     
 }
