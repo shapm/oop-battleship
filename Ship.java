@@ -19,6 +19,8 @@ public class Ship {
     private boolean direction;
     private int size;
     private int position;
+    // Default value for number of ships
+    public static int numberOfShips = 0;
     
 
     public Ship (String name, boolean direction, int size, int position) {
@@ -26,6 +28,8 @@ public class Ship {
             this.direction = direction;
             this.size = size;
             this.position = position;
+            // Add 1 to number of ships when object is created
+            Ship.numberOfShips += 1; 
         }
     
     // getters & setters
@@ -58,5 +62,8 @@ public class Ship {
 
     public void setPosition(int position) {
         this.position = position;
+    }
+    public int getNumberOfShips() {
+        return numberOfShips;
     }
 }

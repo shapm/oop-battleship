@@ -16,8 +16,13 @@ public class BattleshipDriver{
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        System.out.println("Ships: " + Ship.numberOfShips);
         BattleshipGame game = new BattleshipGame();
+        System.out.println("Ships: " + Ship.numberOfShips);
         game.start ();
+        Ship destroyer = null;
+        System.out.println("Ships: " + Ship.numberOfShips);
+        
     }
 
 }

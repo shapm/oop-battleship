@@ -24,10 +24,12 @@ public class BattleshipGame{
 
     public BattleshipGame() {
       board = new Board();
-      player = new Player("",0);
+      // Create player with Name, Score
+      player = new Player("Demo",0);
+      // Create ships with Name, Direction, Size, Position
       patrol = new Ship("Patrol",false,2,0);
       submarine = new Ship("Submarine",false,3,0);
-      battleship = new Ship("BattleShip",false,4,0);
+      battleship = new Ship("Battleship",false,4,0);
       aircraftCarrier = new Ship("Aircraft Carrier",false,5,0);
       destroyer = new Ship("Destroyer",false,3,0);
 }
