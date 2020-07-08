@@ -15,21 +15,21 @@ public class BattleshipGame{
      * @param args the command line arguments
      */
     public Board board;
-    public Ship Player;
-    public Ship Patrol;
-    public Ship Submarine;
-    public Ship Battleship;
-    public Ship AircraftCarrier;
-    public Ship Destroyer;
+    public Player player;
+    public Ship patrol;
+    public Ship submarine;
+    public Ship battleship;
+    public Ship aircraftCarrier;
+    public Ship destroyer;
 
     public BattleshipGame() {
-      board = 0;
-      Player = 0;
-      Patrol = 0;
-      Submarine = 0;
-      Battleship = 0;
-      AircraftCarrier = 0;
-      Destroyer = 0;
+      board = new Board();
+      player = new Player("",0);
+      patrol = new Ship("Patrol",false,2,0);
+      submarine = new Ship("Submarine",false,3,0);
+      battleship = new Ship("BattleShip",false,4,0);
+      aircraftCarrier = new Ship("Aircraft Carrier",false,5,0);
+      destroyer = new Ship("Destroyer",false,3,0);
 }
   
   public void start() {
