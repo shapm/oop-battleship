@@ -20,7 +20,7 @@ public class BattleshipDriver{
         BattleshipGame game = new BattleshipGame();
         System.out.println("Ships: " + Ship.numberOfShips);
         game.start ();
-        Ship destroyer = null;
+        // TODO destroy a ship, decrease coutner, display n of ships
         System.out.println("Ships: " + Ship.numberOfShips);
         
     }
