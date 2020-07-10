@@ -53,11 +53,11 @@ public class Board {
     public void setDirection(boolean direction) {
         this.direction = direction;
     }
-  public void getSquare(){
-    return Square[][];
+  public Square[][] getSquares(){
+    return squares;
   }
-  public void setSquare(){
-    This.Square = Square; 
+  public void setSquare(Square[][] squares){
+    this.squares = squares; 
   }
 
 

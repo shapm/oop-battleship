@@ -66,4 +66,8 @@ public class Ship {
     public int getNumberOfShips() {
         return numberOfShips;
     }
+    
+    public void destroy() {
+        Ship.numberOfShips--;
+    }
 }
