@@ -20,15 +20,21 @@ public class Board {
     // constructores
     public Board() {
         size = 10; //Sirve de recordatorio de la dimension de la matriz
-
+        squares = new Square[10][10];
+        for (int i = 0; i < 10; i++){
+          for (int j = 0; j < 10; j++){
+            squares[i][j] = new Square(false);
+          }
+        }
+        squares[2][5].setTaken(true);
     }
 
     public Board(int size) {
         this.size = size;
         this.squares = new Square[size][size];
         // dos for anidados para llenar cada espacio con un new Square
-        for (int i = 0; i <= 10; i++){
-          for (int j = 0; j <= 10; j++){
+        for (int i = 0; i < size; i++){
+          for (int j = 0; j < size; j++){
             squares[i][j] = new Square(false);
           }
         }
@@ -59,11 +65,12 @@ public class Board {
   public void setSquare(Square[][] squares){
     this.squares = squares; 
   }
-  public void print(Square[][] squares){
-    for(int k = 0; k <= 10; k++){
-        for(int l = 0; l <= 10; l++){
-            System.out.println(squares[k][l].toString());
+  public void print(){
+    for(int k = 0; k < squares.length; k++){
+        for(int l = 0; l < squares[0].length; l++){
+            System.out.print(squares[k][l].toString());
         }
+        
     }  
   }
   //print(squares[][]);

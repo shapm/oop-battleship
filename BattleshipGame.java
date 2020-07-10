@@ -16,7 +16,7 @@ public class BattleshipGame{
      */
     public Board board;
     public Player player;
-   Ship [ ] ships;
+    Ship [ ] ships;
 
      public BattleshipGame() {
       board = new Board();
@@ -33,6 +33,7 @@ public class BattleshipGame{
 
   public void start() {
        System.out.println("Play");
+       board.print();
     }
 
 }
