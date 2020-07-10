@@ -17,7 +17,7 @@ public class Square {
 
 
 
-    public Squre (boolean taken) {
+    public Square (boolean taken) {
             this.taken= taken;
         }
 
@@ -25,8 +25,8 @@ public class Square {
     public boolean getTaken() {
         return taken;
     }
-    public boolean setTaken() {
-        return taken;
+    public void setTaken(boolean taken) {
+       this.taken = taken;
     }
 
 }

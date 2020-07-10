@@ -28,11 +28,12 @@ public class Board {
         this.squares = new Square[size][size];
         // dos for anidados para llenar cada espacio con un new Square
         for (int i = 0; i <= 10; i++){
-          Square [i][j]
-          for (int j = 0; j <= 10; j++{
-            Square [i][j]
+          for (int j = 0; j <= 10; j++){
+            squares[i][j] = new Square(false);
           }
         }
+        
+        squares[2][5].setTaken(true);
 
     }
 
@@ -53,10 +54,10 @@ public class Board {
         this.direction = direction;
     }
   public void getSquare(){
-    return Square;
+    return Square[][];
   }
   public void setSquare(){
-    This.square= square 
+    This.Square = Square; 
   }
 
 
