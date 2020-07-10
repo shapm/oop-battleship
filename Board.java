@@ -19,7 +19,7 @@ public class Board {
     // MÉTODOS - comportamiento
     // constructores
     public Board() {
-        size = 0; //Sirve de recordatorio de la dimension de la matriz
+        size = 10; //Sirve de recordatorio de la dimension de la matriz
 
     }
 
@@ -59,7 +59,14 @@ public class Board {
   public void setSquare(Square[][] squares){
     this.squares = squares; 
   }
-
+  public void print(Square[][] squares){
+    for(int k = 0; k <= 10; k++){
+        for(int l = 0; l <= 10; l++){
+            System.out.println(squares[k][l].toString());
+        }
+    }  
+  }
+  //print(squares[][]);
 
 
 }
