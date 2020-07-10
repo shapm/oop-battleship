@@ -16,24 +16,21 @@ public class BattleshipGame{
      */
     public Board board;
     public Player player;
-    public Ship patrol;
-    public Ship submarine;
-    public Ship battleship;
-    public Ship aircraftCarrier;
-    public Ship destroyer;
+   Ship [ ] ships;
 
-    public BattleshipGame() {
+     public BattleshipGame() {
       board = new Board();
       // Create player with Name, Score
       player = new Player("Demo",0);
       // Create ships with Name, Direction, Size, Position
-      patrol = new Ship("Patrol",false,2,0);
-      submarine = new Ship("Submarine",false,3,0);
-      battleship = new Ship("Battleship",false,4,0);
-      aircraftCarrier = new Ship("Aircraft Carrier",false,5,0);
-      destroyer = new Ship("Destroyer",false,3,0);
+      ships = new Ship[5];
+      ships[0] =  new Ship("Patrol",false,2,0);
+      ships[1] = new Ship("Submarine",false,3,0);
+      ships[2] = new Ship("Battleship",false,4,0);
+      ships[3] = new Ship("Aircraft Carrier",false,5,0);
+      ships[4] = new Ship("Destroyer",false,3,0);
 }
-  
+
   public void start() {
        System.out.println("Play");
     }

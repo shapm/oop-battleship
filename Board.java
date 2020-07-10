@@ -14,18 +14,28 @@ public class Board {
     // Todos los atributos comienzan con minúscula
     private int size; //Se espera declarar una matriz
     private boolean direction;
-    
+    private Square[][] squares;
+
     // MÉTODOS - comportamiento
     // constructores
     public Board() {
-        size = 10; //Sirve de recordatorio de la dimension de la matriz
-    
+        size = 0; //Sirve de recordatorio de la dimension de la matriz
+
     }
-    
+
     public Board(int size) {
         this.size = size;
+        this.squares = new Square[size][size];
+        // dos for anidados para llenar cada espacio con un new Square
+        for (int i = 0; i <= 10; i++){
+          Square [i][j]
+          for (int j = 0; j <= 10; j++{
+            Square [i][j]
+          }
+        }
+
     }
-    
+
     // getters & setters
     public int getSize() {
         return size;
@@ -34,7 +44,7 @@ public class Board {
     public void setSize(int size) {
         this.size = size;
     }
-    
+
     public boolean getDirection() {
         return direction;
     }
@@ -42,7 +52,13 @@ public class Board {
     public void setDirection(boolean direction) {
         this.direction = direction;
     }
-    
+  public void getSquare(){
+    return Square;
+  }
+  public void setSquare(){
+    This.square= square 
+  }
 
-    
+
+
 }
