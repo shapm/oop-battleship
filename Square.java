@@ -25,15 +25,8 @@ public class Square {
     public boolean getTaken() {
         return taken;
     }
-    public void setTaken(boolean taken) {
-       this.taken = taken;
-    }
-    
-    public String toString() {
-        if(taken)
-            return "X";
-        else
-            return ".";
+    public boolean setTaken() {
+        return taken;
     }
 
 }
