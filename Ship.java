@@ -15,19 +15,21 @@ package battleship;
  * direction: 0 horizontal, 1 vertical
  */
 public class Ship {
-    private String name;
-    private boolean direction;
-    private int size;
-    private int position;
+    protected String name;
+    protected boolean direction;
+    protected int size;
+    protected int positionX;
+    protected int positionY;
     // Default value for number of ships
     public static int numberOfShips = 0;
     
 
-    public Ship (String name, boolean direction, int size, int position) {
+    public Ship (String name, boolean direction, int size, int positionX, int positionY) {
             this.name = name;
             this.direction = direction;
             this.size = size;
-            this.position = position;
+            this.positionX = positionX;
+            this.positionY = positionY;
             // Add 1 to number of ships when object is created
             Ship.numberOfShips += 1; 
         }
@@ -56,12 +58,17 @@ public class Ship {
     public void setSize(int size) {
         this.size = size;
     }
-    public int getPosition() {
-        return position;
+    public int getPositionX() {
+        return positionX;
+    }
+    
+    public int getPositionY() {
+        return positionY;
     }
 
-    public void setPosition(int position) {
-        this.position = position;
+    public void setPosition(int positionX, int positionY) {
+        this.positionX = positionX;
+        this.positionY = positionY;
     }
     public int getNumberOfShips() {
         return numberOfShips;
@@ -70,4 +77,5 @@ public class Ship {
     public void destroy() {
         Ship.numberOfShips--;
     }
+    
 }

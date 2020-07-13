@@ -24,11 +24,11 @@ public class BattleshipGame{
       player = new Player("Demo",0);
       // Create ships with Name, Direction, Size, Position
       ships = new Ship[5];
-      ships[0] =  new Ship("Patrol",false,2,0);
-      ships[1] = new Ship("Submarine",false,3,0);
-      ships[2] = new Ship("Battleship",false,4,0);
-      ships[3] = new Ship("Aircraft Carrier",false,5,0);
-      ships[4] = new Ship("Destroyer",false,3,0);
+      ships[0] =  new Patrol(false,0,0);
+      ships[1] = new Submarine(false,0,0);
+      ships[2] = new Battleship(false,0,0);
+      ships[3] = new AircraftCarrier(false,0,0);
+      ships[4] = new Destroyer(false,3,0);
 }
 
   public void start() {
