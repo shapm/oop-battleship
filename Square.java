@@ -15,8 +15,6 @@ public class Square {
 
     private boolean taken;
 
-
-
     public Square (boolean taken) {
             this.taken= taken;
         }
