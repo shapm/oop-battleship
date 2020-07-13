@@ -70,7 +70,7 @@ public class Board {
         for(int l = 0; l < squares[0].length; l++){
             System.out.print(squares[k][l].toString());
         }
-        
+        System.out.println();
     }  
   }
   //print(squares[][]);
