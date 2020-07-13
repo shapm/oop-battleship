@@ -28,11 +28,16 @@ public class BattleshipGame{
       ships[1] = new Submarine(false,0,0);
       ships[2] = new Battleship(false,0,0);
       ships[3] = new AircraftCarrier(false,0,0);
-      ships[4] = new Destroyer(false,3,0);
+      ships[4] = new Destroyer(false,0,0);
 }
 
   public void start() {
        System.out.println("Play");
+       // Clear board
+       
+       // Assign first ship randomly
+       // Generate second ship position, check for conflicts
+       // Assign second ship position, repeat
        board.print();
     }
 
