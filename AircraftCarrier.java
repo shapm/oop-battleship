@@ -10,6 +10,9 @@ package battleship;
  * @author Sha
  */
 public class AircraftCarrier extends Ship {
+  public AircraftCarrier (){
+    super("AircraftCarrier", 5, 0, 0, true);
+  }
     public AircraftCarrier (boolean direction, int positionX, int positionY) {
             super("AircraftCarrier", direction, 5, positionX, positionY);
         }

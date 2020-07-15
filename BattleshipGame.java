@@ -14,8 +14,8 @@ public class BattleshipGame{
     /**
      * @param args the command line arguments
      */
-    public Board board;
-    public Player player;
+    private Board board;
+    private Player player;
     Ship [ ] ships;
 
      public BattleshipGame() {
@@ -34,7 +34,7 @@ public class BattleshipGame{
   public void start() {
        System.out.println("Play");
        // Clear board
-       
+
        // Assign first ship randomly
        // Generate second ship position, check for conflicts
        // Assign second ship position, repeat

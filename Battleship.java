@@ -10,6 +10,9 @@ package battleship;
  * @author Sha
  */
 public class Battleship extends Ship{
+  public Battleship (){
+    super("Battleship", 4, 0, 0, false);
+  }
     public Battleship (boolean direction, int positionX, int positionY) {
         super("Battleship", direction, 4, positionX, positionY);
     }

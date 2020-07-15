@@ -20,13 +20,13 @@ public class Square {
         }
 
     // getters & setters
-    public boolean getTaken() {
+    public boolean isTaken() {
         return taken;
     }
     public void setTaken(boolean taken) {
        this.taken = taken;
     }
-    
+
     public String toString() {
         if(taken)
             return "X";
