@@ -11,7 +11,7 @@ package battleship;
  */
 public class Patrol extends Ship{
   public Patrol (){
-    super("Patrol", 2, 0, 0, false);
+    super("Patrol", false, 2, 0, 0);
   }
     public Patrol (boolean direction, int positionX, int positionY) {
         super("Patrol", direction, 2, positionX, positionY);
