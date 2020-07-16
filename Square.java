@@ -6,26 +6,28 @@ package battleship;
 public class Square {
     private boolean taken;
 
-    public Square(){
+    public Square() {
         this.taken = false;
     }
-    
-    public Square (boolean taken) {
-            this.taken= taken;
-        }
+
+    public Square(boolean taken) {
+        this.taken = taken;
+    }
 
     // getters & setters
     public boolean isTaken() {
         return taken;
     }
     public void setTaken(boolean taken) {
-       this.taken = taken;
+        this.taken = taken;
     }
 
     public String toString() {
-        if(taken)
+        if (taken){
             return "X";
-        else
+        }
+        else{
             return ".";
+        }
     }
 }

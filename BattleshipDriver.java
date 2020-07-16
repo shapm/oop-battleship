@@ -3,19 +3,15 @@ package battleship;
  *
  * @author Sha
  */
-public class BattleshipDriver{
-    /**
-     * @param args the command line arguments
-     */
+public class BattleshipDriver {
     public static void main(String[] args) {
-        // TODO code application logic here
-        System.out.println("Ships: " + Ship.numberOfShips);
+    	// Create game object
         BattleshipGame game = new BattleshipGame();
+        // DEV print number of ships
         System.out.println("Ships: " + Ship.numberOfShips);
-        game.start ();
+        game.start();
         // TODO destroy a ship, decrease coutner, display n of ships
         System.out.println("Ships: " + Ship.numberOfShips);
-        
     }
 
 }

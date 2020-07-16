@@ -7,24 +7,29 @@ package battleship;
 public class Player {
     private String name;
     private int score;
-    
-    // Constructor
-    public Player(String name, int score){
+
+    // Constructor w/o parameters
+    public Player() {
+        this.name = "Player";
+        this.score = 0;
+    }
+    // Constructor with parameters
+    public Player(String name, int score) {
         this.name = name;
         this.score = score;
     }
-    
+
     // Setters & getters
     public void setName(String name) {
         this.name = name;
     }
-    public String getName(){
+    public String getName() {
         return name;
     }
-    public void setScore(int score){
+    public void setScore(int score) {
         this.score = score;
     }
-    public int getScore(){
+    public int getScore() {
         return score;
     }
 }

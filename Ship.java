@@ -18,16 +18,26 @@ public class Ship {
     // Default value for number of ships
     public static int numberOfShips = 0;
 
+    // Constructor without parameters
+    public Ship() {
+        this.name = "Ship";
+        this.direction = false;
+        this.size = 0;
+        this.positionX = 0;
+        this.positionY = 0;
+        numberOfShips++;
+    }
 
-    public Ship (String name, boolean direction, int size, int positionX, int positionY) {
-            this.name = name;
-            this.direction = direction;
-            this.size = size;
-            this.positionX = positionX;
-            this.positionY = positionY;
-            // Add 1 to number of ships when object is created
-            numberOfShips++;
-        }
+    // Constructor with parameters
+    public Ship(String name, boolean direction, int size, int positionX, int positionY) {
+        this.name = name;
+        this.direction = direction;
+        this.size = size;
+        this.positionX = positionX;
+        this.positionY = positionY;
+        // Add 1 to number of ships when object is created
+        numberOfShips++;
+    }
 
     // getters & setters
     public String getName() {
@@ -70,7 +80,7 @@ public class Ship {
     }
 
     public void destroy() {
-        Ship.numberOfShips--;
+        numberOfShips--;
     }
 
 }
