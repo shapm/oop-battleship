@@ -31,7 +31,7 @@ public class Ship {
             this.positionX = positionX;
             this.positionY = positionY;
             // Add 1 to number of ships when object is created
-            Ship.numberOfShips += 1;
+            numberOfShips++;
         }
 
     // getters & setters
@@ -70,7 +70,7 @@ public class Ship {
         this.positionX = positionX;
         this.positionY = positionY;
     }
-    public int static getNumberOfShips() {
+    public static int getNumberOfShips() {
         return numberOfShips;
     }
 
