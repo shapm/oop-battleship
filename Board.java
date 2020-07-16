@@ -12,18 +12,17 @@ package battleship;
 public class Board {
     // ATRIBUTOS - características
     // Todos los atributos comienzan con minúscula
-    private int size; //Se espera declarar una matriz
-    private boolean direction;
+    private int size; //Se declara el tamaño de la matriz
     private Square[][] squares;
 
     // MÉTODOS - comportamiento
     // constructores
     public Board() {
-        size = 10; //Sirve de recordatorio de la dimension de la matriz
-        squares = new Square[10][10];
-        for (int i = 0; i < 10; i++){
-          for (int j = 0; j < 10; j++){
-            squares[i][j] = new Square(false);
+        this.size = 10; //Sirve de recordatorio de la dimension de la matriz
+        this.squares = new Square[size][size];
+        for (int i = 0; i < size; i++){
+          for (int j = 0; j < size; j++){
+            this.squares[i][j] = new Square();
           }
         }
         squares[2][5].setTaken(true);
@@ -51,14 +50,7 @@ public class Board {
     public void setSize(int size) {
         this.size = size;
     }
-
-    public boolean getDirection() {
-        return direction;
-    }
-
-    public void setDirection(boolean direction) {
-        this.direction = direction;
-    }
+    
   public Square[][] getSquares(){
     return squares;
   }
