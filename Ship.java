@@ -13,6 +13,7 @@ public class Ship {
     protected String name;
     protected boolean direction;
     protected int size;
+    protected int size2;
     protected int positionX;
     protected int positionY;
     // Default value for number of ships
@@ -23,6 +24,7 @@ public class Ship {
         this.name = "Ship";
         this.direction = false;
         this.size = 0;
+        this.size2 = 0;
         this.positionX = 0;
         this.positionY = 0;
         numberOfShips++;
@@ -44,23 +46,28 @@ public class Ship {
         return name;
     }
 
-    public void setName(String name) {
+   protected void setName(String name) {
         this.name = name;
     }
 
-    public boolean getDirection() {
+    protected boolean getDirection() {
         return direction;
     }
 
-    public void setDirection(boolean direction) {
+    protected void setDirection(boolean direction) {
         this.direction = direction;
     }
 
     public int getSize() {
         return size;
     }
-
-    public void setSize(int size) {
+    
+    protected void setSize(){
+           this.size2=size2;
+           System.out.print("Esto es sobrecarga");
+    }
+      
+    protected void setSize(int size) {
         this.size = size;
     }
     public int getPositionX() {

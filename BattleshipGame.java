@@ -1,5 +1,6 @@
 package battleship;
 
+import javax.swing.JOptionPane;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -210,10 +211,24 @@ public class BattleshipGame {
 
     public void start() {
         // Start Message
+        
+        
+        // Logica de que el usuario pueda continuar jugando hasta que encuentre todos los barcos. 
+        int a;
+        if(Ship.numberOfShips > 0) {
+        do{ 
+           a = Integer.parseInt(JOptionPane.showInputDialog("¿Quieres seguir jugando? Oprime 0, si deseas salir oprime 1"));
+        
         System.out.println("Play");
+        
+        
+        }while(a == 0);
+        System.out.println("Game over");
         // Clear board
-        // Set Ships
+        //Set Ships
         setShips();
         board.print();
+        }
+        System.out.print("Congratulations");
     }
 }
