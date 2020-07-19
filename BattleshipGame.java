@@ -210,25 +210,51 @@ public class BattleshipGame {
     }
 
     public void start() {
-        // Start Message
-        
-        
+        // Start Message  
         // Logica de que el usuario pueda continuar jugando hasta que encuentre todos los barcos. 
-        int a;
-        if(Ship.numberOfShips > 0) {
-        do{ 
-           a = Integer.parseInt(JOptionPane.showInputDialog("¿Quieres seguir jugando? Oprime 0, si deseas salir oprime 1"));
+        // Logica para preguntar al usuario las coordenadas e imprimir si existe un barco en esa posicion
+        int posiX = 0;
+        int posiY = 1;
+        
+        System.out.print("Si deseas salir escribe -1 en la coordena en Y");
         
         System.out.println("Play");
         
+        while(posiY >= 0 || Ship.numberOfShips == 0);
+        {
+            
+         posiX = Integer.parseInt(JOptionPane.showInputDialog("Dame la coordenada en x: "));
+         posiY = Integer.parseInt(JOptionPane.showInputDialog("Dame la coordenada en Y: "));
         
-        }while(a == 0);
-        System.out.println("Game over");
+         
+        /* if(board.[posiX][posiY]){
+             
+        System.out.print("Si hay un barco ahi");
+        
+         
+         }
+         //Si no hay nada en la casilla seleccionada 
+         else{
+         System.out.print("No hay un barco ahi");
+        
+         
+         }
+        */
+        
+         
         // Clear board
         //Set Ships
         setShips();
         board.print();
+         
         }
+        if(posiY < 0){
+            
+        System.out.println("Game over");
+        
+        }
+        
+        else
         System.out.print("Congratulations");
     }
 }

@@ -89,5 +89,8 @@ public class Ship {
     public void destroy() {
         numberOfShips--;
     }
+    public void hola(){
+        System.out.println("Uso exclusivo como ejemplo de sobreescritura");
+    }
 
 }

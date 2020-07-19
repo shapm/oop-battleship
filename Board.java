@@ -7,7 +7,7 @@ public class Board {
     // ATRIBUTOS - características
     // Todos los atributos comienzan con minúscula
     private int size; //Se declara el tamaño de la matriz
-    private Square[][] squares;
+    protected Square[][] squares;
 
     // MÉTODOS - comportamiento
     // constructores
