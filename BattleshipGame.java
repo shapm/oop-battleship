@@ -215,6 +215,8 @@ public class BattleshipGame {
         // Logica para preguntar al usuario las coordenadas e imprimir si existe un barco en esa posicion
         int posiX = 0;
         int posiY = 1;
+        int ShipVerification[][];
+        int Score;
         
         System.out.print("Si deseas salir escribe -1 en la coordena en Y");
         
@@ -225,9 +227,9 @@ public class BattleshipGame {
             
          posiX = Integer.parseInt(JOptionPane.showInputDialog("Dame la coordenada en x: "));
          posiY = Integer.parseInt(JOptionPane.showInputDialog("Dame la coordenada en Y: "));
-        
          
-        /* if(board.[posiX][posiY]){
+         
+        if(ShipVerification[posiX][posiY] = board.getSquares[posiX][posiY]){
              
         System.out.print("Si hay un barco ahi");
         
@@ -239,22 +241,44 @@ public class BattleshipGame {
         
          
          }
-        */
+        
         
          
         // Clear board
         //Set Ships
         setShips();
         board.print();
-         
+        
+        /*Almacena el score
+         if(Ship.numberOfShips == 5){
+           Score = 0;
+       }
+       
+        else(Ship.numberOfShips == 4)
+           Score = 1;    
+          
+        else(Ship.numberOfShips == 3)
+           Score = 2;
+                   
+        else(Ship.numberOfShips == 2)
+           Score = 3;
+                   
+        else(Ship.numberOfShips == 1)
+           Score = 4;
+                   
+        else(Ship.numberOfShips == 0)
+           Score = 5;*/
         }
         if(posiY < 0){
             
         System.out.println("Game over");
         
+        //System.out.println("Tu puntaje es: "+ Score);
         }
         
         else
         System.out.print("Congratulations");
+
     }
+
 }
