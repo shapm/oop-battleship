@@ -13,6 +13,7 @@ public class BattleshipGame {
     private Board board;
     private Player player;
     private ArrayList<Ship> ships;
+    private Square square;
 
     public BattleshipGame() {
         this.player = new Player();
@@ -229,15 +230,19 @@ public class BattleshipGame {
          posiY = Integer.parseInt(JOptionPane.showInputDialog("Dame la coordenada en Y: "));
          
          
-        if(ShipVerification[posiX][posiY] = board.getSquares[posiX][posiY]){
-             
+        if(square.isTaken()){
+        ShipVerification[posiX][posiY] = board.getSquares()[posiX][posiY];    
         System.out.print("Si hay un barco ahi");
         
-         
+        square.toString();
+        
          }
          //Si no hay nada en la casilla seleccionada 
-         else{
-         System.out.print("No hay un barco ahi");
+        else{
+            
+        System.out.print("No hay un barco ahi");
+         
+        square.toString();
         
          
          }
