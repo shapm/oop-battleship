@@ -20,10 +20,10 @@ public class Player {
     }
 
     // Setters & getters
-    private void setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
-    protected String getName() {
+    public String getName() {
         return name;
     }
     public void setScore(int score) {

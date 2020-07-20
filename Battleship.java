@@ -10,6 +10,5 @@ public class Battleship extends Ship {
     }
     public Battleship(boolean direction, int positionX, int positionY) {
         super("Battleship", direction, 4, positionX, positionY);
-        Ship.numberOfShips++;
     }
 }

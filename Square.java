@@ -24,10 +24,10 @@ public class Square {
 
     public String toString() {
         if (taken){
-            return "O";
+            return "X";
         }
         else{
-            return ".";    
+            return ".";
         }
     }
 }

@@ -1,6 +1,5 @@
 package battleship;
 
-import javax.swing.JOptionPane;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -13,7 +12,6 @@ public class BattleshipGame {
     private Board board;
     private Player player;
     private ArrayList<Ship> ships;
-    private Square square;
 
     public BattleshipGame() {
         this.player = new Player();
@@ -211,79 +209,11 @@ public class BattleshipGame {
     }
 
     public void start() {
-        // Start Message  
-        // Logica de que el usuario pueda continuar jugando hasta que encuentre todos los barcos. 
-        // Logica para preguntar al usuario las coordenadas e imprimir si existe un barco en esa posicion
-        int posiX = 0;
-        int posiY = 1;
-        int ShipVerification[][];
-        int Score;
-        
-        System.out.print("Si deseas salir escribe -1 en la coordena en Y");
-        
+        // Start Message
         System.out.println("Play");
-        
-        while(posiY >= 0 || Ship.numberOfShips == 0);
-        {
-            
-         posiX = Integer.parseInt(JOptionPane.showInputDialog("Dame la coordenada en x: "));
-         posiY = Integer.parseInt(JOptionPane.showInputDialog("Dame la coordenada en Y: "));
-         
-         
-        if(square.isTaken()){
-        ShipVerification[posiX][posiY] = board.getSquares()[posiX][posiY];    
-        System.out.print("Si hay un barco ahi");
-        
-        square.toString();
-        
-         }
-         //Si no hay nada en la casilla seleccionada 
-        else{
-            
-        System.out.print("No hay un barco ahi");
-         
-        square.toString();
-        
-         
-         }
-        
-        
-         
         // Clear board
-        //Set Ships
+        // Set Ships
         setShips();
         board.print();
-        
-        /*Almacena el score
-         if(Ship.numberOfShips == 5){
-           Score = 0;
-       }
-       
-        else(Ship.numberOfShips == 4)
-           Score = 1;    
-          
-        else(Ship.numberOfShips == 3)
-           Score = 2;
-                   
-        else(Ship.numberOfShips == 2)
-           Score = 3;
-                   
-        else(Ship.numberOfShips == 1)
-           Score = 4;
-                   
-        else(Ship.numberOfShips == 0)
-           Score = 5;*/
-        }
-        if(posiY < 0){
-            
-        System.out.println("Game over");
-        
-        //System.out.println("Tu puntaje es: "+ Score);
-        }
-        
-        else
-        System.out.print("Congratulations");
-
     }
-
 }

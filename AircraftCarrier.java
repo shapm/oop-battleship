@@ -10,6 +10,5 @@ public class AircraftCarrier extends Ship {
 
     public AircraftCarrier(boolean direction, int positionX, int positionY) {
         super("AircraftCarrier", direction, 5, positionX, positionY);
-        Ship.numberOfShips++;
     }
 }
