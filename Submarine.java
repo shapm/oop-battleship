@@ -11,6 +11,5 @@ public class Submarine extends Ship {
 
     public Submarine(boolean direction, int positionX, int positionY) {
         super("Submarine", direction, 3, positionX, positionY);
-        Ship.numberOfShips++;
     }
 }
