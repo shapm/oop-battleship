@@ -231,7 +231,7 @@ public class BattleshipGame {
          
          
         if(square.isTaken()){
-        ShipVerification[posiX][posiY] = board.getSquares()[posiX][posiY];    
+        //ShipVerification[posiX][posiY] = board.getSquares()[posiX][posiY];    
         System.out.print("Si hay un barco ahi");
         
         square.toString();
